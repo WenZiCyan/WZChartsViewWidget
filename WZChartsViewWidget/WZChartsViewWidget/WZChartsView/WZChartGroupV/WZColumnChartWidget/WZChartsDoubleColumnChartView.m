@@ -100,7 +100,7 @@
     self.leftColumnViewArray = [NSMutableArray<WZColumnView *> arrayWithCapacity:0];
     self.rightColumnViewArray = [NSMutableArray<WZColumnView *> arrayWithCapacity:0];
     self.btnArray = [NSMutableArray<UIButton *> arrayWithCapacity:0];
-    [self createGridYAxisLineWithCount:self.pointArray.count showCount:self.columnViewParams.lineShowCount ifShow:NO lineWidth:self.columnViewParams.lineYWidth lineColor:self.columnViewParams.lineYColor];
+    [self createGridYAxisLineWithCount:self.pointArray.count showCount:self.columnViewParams.lineShowCount ifShow:self.columnViewParams.ifShowY lineWidth:self.columnViewParams.lineYWidth lineColor:self.columnViewParams.lineYColor];
     [self createBottomTextViewWithHeight:self.columnViewParams.bottomHeight textColor:self.columnViewParams.textColor textFont:self.columnViewParams.textFont];
     if (self.columnViewParams.ifShowTopX) {
         [self createGridTopXAxisLineWithLineWidth:self.columnViewParams.lineTopXWidth lineColor:self.columnViewParams.lineTopXColor];
@@ -182,11 +182,18 @@
         self.lastBtn.selected = !self.lastBtn.selected;
         self.lastLeftBackView.alpha = self.leftParams.viewAlpha;
         self.lastRightBackView.alpha = self.rightParams.viewAlpha;
-        self.lastLineShapeLayer.strokeColor = [UIColor clearColor].CGColor;
+        self.lastLineShapeLayer.strokeColor = self.columnViewParams.lineYColor.CGColor;
+        if (clickBtn.tag < self.bottomTextLayerArray.count) {
+            self.lastbottomTextLayer.foregroundColor =self.columnViewParams.textColor.CGColor;
+         }
     }
     clickBtn.selected = !clickBtn.selected;
     self.lastLineShapeLayer = (CAShapeLayer *)self.lineShapeLayerArray[clickBtn.tag];
-    self.lastLineShapeLayer.strokeColor = clickBtn.selected?[UIColor colorFromHexString:@"#c3f7d9"].CGColor:[UIColor clearColor].CGColor;
+    self.lastLineShapeLayer.strokeColor = clickBtn.selected?self.columnViewParams.lineYClickColor.CGColor:self.columnViewParams.lineYColor.CGColor;
+    if (clickBtn.tag < self.bottomTextLayerArray.count) {
+        self.lastbottomTextLayer = (CATextLayer *)self.bottomTextLayerArray[clickBtn.tag];
+        self.lastbottomTextLayer.foregroundColor = clickBtn.selected?self.columnViewParams.textClickColor.CGColor:self.columnViewParams.textColor.CGColor;;
+    }
     self.lastLeftBackView = (WZColumnView *)self.leftColumnViewArray[clickBtn.tag];
     self.lastRightBackView = (WZColumnView *)self.rightColumnViewArray[clickBtn.tag];
     self.lastLeftBackView.alpha = clickBtn.selected? 1.:self.leftParams.viewAlpha;
@@ -221,9 +228,7 @@
 
 - (WZColumnViewParams *)leftParams {
     if (!_leftParams) {
-        _leftParams = [WZColumnViewParams new];
-        [_leftParams initDate];
-        _leftParams.viewAlpha = self.columnViewParams.viewAlpha;
+        _leftParams = [self.columnViewParams copy];
         _leftParams.colorRandom = self.leftLayerColorsArray;
     }
     return _leftParams;
@@ -231,9 +236,7 @@
 
 - (WZColumnViewParams *)rightParams {
     if (!_rightParams) {
-        _rightParams = [WZColumnViewParams new];
-        [_rightParams initDate];
-        _rightParams.viewAlpha = self.columnViewParams.viewAlpha;
+        _rightParams = [self.columnViewParams copy];
         _rightParams.colorRandom = self.rightLayerColorsArray;
     }
     return _rightParams;

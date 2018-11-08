@@ -35,6 +35,8 @@
 		6383765F2193C8EC001C5532 /* WZDoubleColumnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6383765E2193C8EC001C5532 /* WZDoubleColumnViewController.m */; };
 		638376632193CF72001C5532 /* WZGroupChartsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 638376622193CF72001C5532 /* WZGroupChartsView.m */; };
 		638376662193D756001C5532 /* WZGroupChartsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 638376652193D756001C5532 /* WZGroupChartsViewController.m */; };
+		63837669219405A0001C5532 /* WZChartsSingleColumnChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 63837668219405A0001C5532 /* WZChartsSingleColumnChartView.m */; };
+		6383766D21940DBB001C5532 /* WZSingleColumnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6383766C21940DBB001C5532 /* WZSingleColumnViewController.m */; };
 		93BC841740D8BF3799725E49 /* libPods-WZChartsViewWidget.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B99DD63DB22A3D9348F3DA7 /* libPods-WZChartsViewWidget.a */; };
 /* End PBXBuildFile section */
 
@@ -114,6 +116,10 @@
 		638376622193CF72001C5532 /* WZGroupChartsView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WZGroupChartsView.m; sourceTree = "<group>"; };
 		638376642193D756001C5532 /* WZGroupChartsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WZGroupChartsViewController.h; sourceTree = "<group>"; };
 		638376652193D756001C5532 /* WZGroupChartsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WZGroupChartsViewController.m; sourceTree = "<group>"; };
+		63837667219405A0001C5532 /* WZChartsSingleColumnChartView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WZChartsSingleColumnChartView.h; sourceTree = "<group>"; };
+		63837668219405A0001C5532 /* WZChartsSingleColumnChartView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WZChartsSingleColumnChartView.m; sourceTree = "<group>"; };
+		6383766B21940DBB001C5532 /* WZSingleColumnViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WZSingleColumnViewController.h; sourceTree = "<group>"; };
+		6383766C21940DBB001C5532 /* WZSingleColumnViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WZSingleColumnViewController.m; sourceTree = "<group>"; };
 		A883F9547FA5D4D7B7B3656C /* Pods-WZChartsViewWidget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WZChartsViewWidget.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WZChartsViewWidget/Pods-WZChartsViewWidget.debug.xcconfig"; sourceTree = "<group>"; };
 		A9D600BED513FE38EE47182C /* Pods-WZChartsViewWidget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WZChartsViewWidget.release.xcconfig"; path = "Pods/Target Support Files/Pods-WZChartsViewWidget/Pods-WZChartsViewWidget.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -251,6 +257,8 @@
 				630A204B21927E8E007D2912 /* WZColumnViewParams.m */,
 				630A204721927E8E007D2912 /* WZColumnView.h */,
 				630A204A21927E8E007D2912 /* WZColumnView.m */,
+				63837667219405A0001C5532 /* WZChartsSingleColumnChartView.h */,
+				63837668219405A0001C5532 /* WZChartsSingleColumnChartView.m */,
 				630A204C21927E8E007D2912 /* WZChartsDoubleColumnChartView.h */,
 				630A204921927E8E007D2912 /* WZChartsDoubleColumnChartView.m */,
 			);
@@ -280,10 +288,11 @@
 		630A206421927F03007D2912 /* WZChartsExample */ = {
 			isa = PBXGroup;
 			children = (
-				638376602193CF45001C5532 /* WZGroupChartsExample */,
-				6383765C2193C8C1001C5532 /* WZDoubleColumnChartsExample */,
 				630A2068219288B4007D2912 /* WZRingChartsExample */,
 				630A207721929748007D2912 /* WZLineChartsExample */,
+				6383766A21940D63001C5532 /* WZSingleColumnChartsExample */,
+				6383765C2193C8C1001C5532 /* WZDoubleColumnChartsExample */,
+				638376602193CF45001C5532 /* WZGroupChartsExample */,
 			);
 			path = WZChartsExample;
 			sourceTree = "<group>";
@@ -344,6 +353,15 @@
 				638376652193D756001C5532 /* WZGroupChartsViewController.m */,
 			);
 			path = WZGroupChartsExample;
+			sourceTree = "<group>";
+		};
+		6383766A21940D63001C5532 /* WZSingleColumnChartsExample */ = {
+			isa = PBXGroup;
+			children = (
+				6383766B21940DBB001C5532 /* WZSingleColumnViewController.h */,
+				6383766C21940DBB001C5532 /* WZSingleColumnViewController.m */,
+			);
+			path = WZSingleColumnChartsExample;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -530,8 +548,10 @@
 				630A207D219298AF007D2912 /* WZLineViewParams.m in Sources */,
 				630A1FEF21927755007D2912 /* AppDelegate.m in Sources */,
 				630A2067219282F5007D2912 /* WZRingChartsViewController.m in Sources */,
+				63837669219405A0001C5532 /* WZChartsSingleColumnChartView.m in Sources */,
 				6383765F2193C8EC001C5532 /* WZDoubleColumnViewController.m in Sources */,
 				630A207421928CBC007D2912 /* UIFont+SystemFontName.m in Sources */,
+				6383766D21940DBB001C5532 /* WZSingleColumnViewController.m in Sources */,
 				638376662193D756001C5532 /* WZGroupChartsViewController.m in Sources */,
 				630A205C21927E8F007D2912 /* WZChartsBaseBackView.m in Sources */,
 				630A207321928CBC007D2912 /* UIImage+Gif.m in Sources */,

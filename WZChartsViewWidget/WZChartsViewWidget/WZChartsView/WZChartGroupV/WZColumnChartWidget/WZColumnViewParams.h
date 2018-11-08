@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface WZColumnViewParams : NSObject
+@interface WZColumnViewParams : NSObject <NSCopying,NSMutableCopying>
 
 /******************动画******************/
 

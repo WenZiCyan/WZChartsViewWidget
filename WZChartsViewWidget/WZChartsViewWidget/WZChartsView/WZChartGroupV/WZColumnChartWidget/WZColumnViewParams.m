@@ -16,6 +16,58 @@
 
 @implementation WZColumnViewParams
 
+- (id)mutableCopyWithZone:(NSZone *)zone {
+    WZColumnViewParams *params = [[[self class] allocWithZone:zone] init];
+    params.ifAnimation = self.ifAnimation;
+    params.animDuration = self.animDuration;
+    params.ifShowTopX = self.ifShowTopX;
+    params.lineTopXWidth = self.lineTopXWidth;
+    params.lineTopXColor = self.lineTopXColor;
+    params.ifShowBottomX = self.ifShowBottomX;
+    params.lineBottomXWidth = self.lineBottomXWidth;
+    params.lineBottomXColor = self.lineBottomXColor;
+    params.ifShowY = self.ifShowY;
+    params.lineYWidth = self.lineYWidth;
+    params.lineYColor = self.lineYColor;
+    params.bottomHeight = self.bottomHeight;
+    params.textFont = self.textFont;
+    params.textColor = self.textColor;
+    params.lineYClickColor = self.lineYClickColor;
+    params.textClickColor = self.textClickColor;
+    params.colorRandom = self.colorRandom;
+    params.lineWidth = self.lineWidth;
+    params.lineShowCount = self.lineShowCount;
+    params.viewAlpha = self.viewAlpha;
+    params.lineDis = self.lineDis;
+    return params;
+}
+
+- (id)copyWithZone:(NSZone *)zone {
+    WZColumnViewParams *params = [[[self class] allocWithZone:zone] init];
+    params.ifAnimation = self.ifAnimation;
+    params.animDuration = self.animDuration;
+    params.ifShowTopX = self.ifShowTopX;
+    params.lineTopXWidth = self.lineTopXWidth;
+    params.lineTopXColor = self.lineTopXColor;
+    params.ifShowBottomX = self.ifShowBottomX;
+    params.lineBottomXWidth = self.lineBottomXWidth;
+    params.lineBottomXColor = self.lineBottomXColor;
+    params.ifShowY = self.ifShowY;
+    params.lineYWidth = self.lineYWidth;
+    params.lineYColor = self.lineYColor;
+    params.bottomHeight = self.bottomHeight;
+    params.textFont = self.textFont;
+    params.textColor = self.textColor;
+    params.lineYClickColor = self.lineYClickColor;
+    params.textClickColor = self.textClickColor;
+    params.colorRandom = self.colorRandom;
+    params.lineWidth = self.lineWidth;
+    params.lineShowCount = self.lineShowCount;
+    params.viewAlpha = self.viewAlpha;
+    params.lineDis = self.lineDis;
+    return params;
+}
+
 -(void)initDate{
     /******************动画******************/
     

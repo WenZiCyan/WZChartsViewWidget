@@ -15,6 +15,32 @@
 
 @implementation WZRingAnimParams
 
+- (id)mutableCopyWithZone:(NSZone *)zone {
+    WZRingAnimParams *params = [[[self class] allocWithZone:zone] init];
+    params.ifAnimation = self.ifAnimation;
+    params.animDuration = self.animDuration;
+    params.colorRandom = self.colorRandom;
+    params.backColorRandom = self.backColorRandom;
+    params.ringCount = self.ringCount;
+    params.ringWidth = self.ringWidth;
+    params.ringDistance = self.ringDistance;
+    params.ifHasBack = self.ifHasBack;
+    return params;
+}
+
+- (id)copyWithZone:(NSZone *)zone {
+    WZRingAnimParams *params = [[[self class] allocWithZone:zone] init];
+    params.ifAnimation = self.ifAnimation;
+    params.animDuration = self.animDuration;
+    params.colorRandom = self.colorRandom;
+    params.backColorRandom = self.backColorRandom;
+    params.ringCount = self.ringCount;
+    params.ringWidth = self.ringWidth;
+    params.ringDistance = self.ringDistance;
+    params.ifHasBack = self.ifHasBack;
+    return params;
+}
+
 -(void)initDate{
     /******************动画时间******************/
 

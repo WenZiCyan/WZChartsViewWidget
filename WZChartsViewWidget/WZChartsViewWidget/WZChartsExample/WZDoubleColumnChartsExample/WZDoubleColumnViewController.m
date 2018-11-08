@@ -77,7 +77,7 @@
         [self->_textArray addObject:@"1-4"];
         [self->_textArray addObject:@"1-5"];
         
-        [self.doubleColumnChartView updateDoubleColumnChartViewWithPointArray:self->_array timeArray:self->_textArray maxIncome:24];
+        [self.doubleColumnChartView updateDoubleColumnChartViewWithPointArray:self->_array timeArray:[@[]mutableCopy] maxIncome:24];
         [self.scrollerView.mj_header endRefreshing];
     });
 }

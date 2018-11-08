@@ -11,6 +11,7 @@
 #import "WZLineViewController.h"
 #import "WZDoubleColumnViewController.h"
 #import "WZGroupChartsViewController.h"
+#import "WZSingleColumnViewController.h"
 #import <Masonry.h>
 #import "UIColor+WZPalette.h"
 
@@ -94,6 +95,9 @@
     }
     else if ([title isEqualToString:@"折线图"]) {
         vc = [[WZLineViewController alloc]init];
+    }
+    else if ([title isEqualToString:@"Single柱形图"]) {
+        vc = [[WZSingleColumnViewController alloc]init];
     }
     else if ([title isEqualToString:@"Double柱形图"]) {
         vc = [[WZDoubleColumnViewController alloc]init];

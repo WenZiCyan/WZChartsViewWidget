@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface WZRingAnimParams : NSObject
+@interface WZRingAnimParams : NSObject <NSCopying,NSMutableCopying>
 
 /******************动画******************/
 
