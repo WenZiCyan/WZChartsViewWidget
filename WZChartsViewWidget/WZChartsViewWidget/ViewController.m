@@ -31,7 +31,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.title = @"ChartsDemo";
+    self.title = @"雯子Cyan的图表框架";
     [self.view addSubview:self.tableView];
     [self createTableViewWithData];
 }

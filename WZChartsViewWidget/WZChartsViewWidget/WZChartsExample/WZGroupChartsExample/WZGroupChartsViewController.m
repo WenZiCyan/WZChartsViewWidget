@@ -71,6 +71,8 @@
     if (_page == 1) {
         _dataArray = [NSMutableArray arrayWithCapacity:0];
     }
+    
+    NSMutableArray *array = [NSMutableArray arrayWithCapacity:0];
 
     NSDictionary *dic1 = @{@"pointY":@59.4098,@"topZoomY":@(195/1.5),@"pointLeftY":@3.6,@"pointRightY":@4.8,@"bottomZoomY":@(170/24.)};
     NSDictionary *dic2 = @{@"pointY":@67.33455,@"topZoomY":@(195/1.5),@"pointLeftY":@9.5,@"pointRightY":@11.0,@"bottomZoomY":@(170/24.)};
@@ -83,12 +85,18 @@
     [_dataArray addObject:dic3];
     [_dataArray addObject:dic4];
     [_dataArray addObject:dic5];
+    
+    [array addObject:dic1];
+    [array addObject:dic2];
+    [array addObject:dic3];
+    [array addObject:dic4];
+    [array addObject:dic5];
 
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         if (self->_page == 1) {
             [self.groupChartsView initBottomChartsGroupViewWithViewWithArray:self->_dataArray topMaxIncome:170 bottomMaxIncome:24];
         } else {
-            [self.groupChartsView updateBottomChartsGroupViewWithViewWithArray:self->_dataArray topMaxIncome:170 bottomMaxIncome:24];
+            [self.groupChartsView updateBottomChartsGroupViewWithViewWithArray:array topMaxIncome:170 bottomMaxIncome:24];
         }
         [self.backScrollView.mj_header endRefreshing];
     });

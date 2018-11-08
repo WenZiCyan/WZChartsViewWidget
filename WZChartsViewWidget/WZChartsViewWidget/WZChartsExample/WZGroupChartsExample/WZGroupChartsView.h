@@ -28,7 +28,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface WZGroupChartsView : UIView
 
 @property (weak, nonatomic) id<WZGroupChartsViewDelegte>wzGroupChartsViewDelegte;
-// 更新图表
+// 更新图表 array 传新增的就行
 - (void)updateBottomChartsGroupViewWithViewWithArray:(NSMutableArray *)array topMaxIncome:(float)topMaxIncome bottomMaxIncome:(float)bottomMaxIncome;
 // 初始化图表
 - (void)initBottomChartsGroupViewWithViewWithArray:(NSMutableArray *)array topMaxIncome:(float)topMaxIncome bottomMaxIncome:(float)bottomMaxIncome;
