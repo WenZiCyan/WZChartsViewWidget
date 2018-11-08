@@ -1,0 +1,861 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		630A1FEF21927755007D2912 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 630A1FEE21927755007D2912 /* AppDelegate.m */; };
+		630A1FF221927755007D2912 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 630A1FF121927755007D2912 /* ViewController.m */; };
+		630A1FF521927755007D2912 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 630A1FF321927755007D2912 /* Main.storyboard */; };
+		630A1FF721927758007D2912 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 630A1FF621927758007D2912 /* Assets.xcassets */; };
+		630A1FFA21927758007D2912 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 630A1FF821927758007D2912 /* LaunchScreen.storyboard */; };
+		630A1FFD21927758007D2912 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 630A1FFC21927758007D2912 /* main.m */; };
+		630A200721927758007D2912 /* WZChartsViewWidgetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 630A200621927758007D2912 /* WZChartsViewWidgetTests.m */; };
+		630A201221927758007D2912 /* WZChartsViewWidgetUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 630A201121927758007D2912 /* WZChartsViewWidgetUITests.m */; };
+		630A205421927E8F007D2912 /* WZRingShapeLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 630A203F21927E8E007D2912 /* WZRingShapeLayer.m */; };
+		630A205521927E8F007D2912 /* WZRingChartsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 630A204021927E8E007D2912 /* WZRingChartsView.m */; };
+		630A205621927E8F007D2912 /* WZRingAnimParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 630A204421927E8E007D2912 /* WZRingAnimParams.m */; };
+		630A205721927E8F007D2912 /* WZChartsDoubleColumnChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 630A204921927E8E007D2912 /* WZChartsDoubleColumnChartView.m */; };
+		630A205821927E8F007D2912 /* WZColumnView.m in Sources */ = {isa = PBXBuildFile; fileRef = 630A204A21927E8E007D2912 /* WZColumnView.m */; };
+		630A205921927E8F007D2912 /* WZColumnViewParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 630A204B21927E8E007D2912 /* WZColumnViewParams.m */; };
+		630A205A21927E8F007D2912 /* WZChartsLineChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 630A205021927E8E007D2912 /* WZChartsLineChartView.m */; };
+		630A205B21927E8F007D2912 /* UIColor+WZPalette.m in Sources */ = {isa = PBXBuildFile; fileRef = 630A205221927E8E007D2912 /* UIColor+WZPalette.m */; };
+		630A205C21927E8F007D2912 /* WZChartsBaseBackView.m in Sources */ = {isa = PBXBuildFile; fileRef = 630A205321927E8E007D2912 /* WZChartsBaseBackView.m */; };
+		630A206221927E9A007D2912 /* APTopRingChartsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 630A206021927E9A007D2912 /* APTopRingChartsView.m */; };
+		630A2067219282F5007D2912 /* WZRingChartsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 630A2066219282F5007D2912 /* WZRingChartsViewController.m */; };
+		630A207321928CBC007D2912 /* UIImage+Gif.m in Sources */ = {isa = PBXBuildFile; fileRef = 630A206B21928CBC007D2912 /* UIImage+Gif.m */; };
+		630A207421928CBC007D2912 /* UIFont+SystemFontName.m in Sources */ = {isa = PBXBuildFile; fileRef = 630A206D21928CBC007D2912 /* UIFont+SystemFontName.m */; };
+		630A207521928CBC007D2912 /* UIResponder+Router.m in Sources */ = {isa = PBXBuildFile; fileRef = 630A207021928CBC007D2912 /* UIResponder+Router.m */; };
+		630A207621928CBC007D2912 /* CALayer+ShadowRadius.m in Sources */ = {isa = PBXBuildFile; fileRef = 630A207121928CBC007D2912 /* CALayer+ShadowRadius.m */; };
+		630A207A21929794007D2912 /* WZLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 630A207921929794007D2912 /* WZLineViewController.m */; };
+		630A207D219298AF007D2912 /* WZLineViewParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 630A207C219298AF007D2912 /* WZLineViewParams.m */; };
+		6383765F2193C8EC001C5532 /* WZDoubleColumnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6383765E2193C8EC001C5532 /* WZDoubleColumnViewController.m */; };
+		638376632193CF72001C5532 /* WZGroupChartsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 638376622193CF72001C5532 /* WZGroupChartsView.m */; };
+		638376662193D756001C5532 /* WZGroupChartsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 638376652193D756001C5532 /* WZGroupChartsViewController.m */; };
+		93BC841740D8BF3799725E49 /* libPods-WZChartsViewWidget.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B99DD63DB22A3D9348F3DA7 /* libPods-WZChartsViewWidget.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		630A200321927758007D2912 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 630A1FE221927755007D2912 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 630A1FE921927755007D2912;
+			remoteInfo = WZChartsViewWidget;
+		};
+		630A200E21927758007D2912 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 630A1FE221927755007D2912 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 630A1FE921927755007D2912;
+			remoteInfo = WZChartsViewWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4B99DD63DB22A3D9348F3DA7 /* libPods-WZChartsViewWidget.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WZChartsViewWidget.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		630A1FEA21927755007D2912 /* WZChartsViewWidget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WZChartsViewWidget.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		630A1FED21927755007D2912 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		630A1FEE21927755007D2912 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		630A1FF021927755007D2912 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		630A1FF121927755007D2912 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		630A1FF421927755007D2912 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		630A1FF621927758007D2912 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		630A1FF921927758007D2912 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		630A1FFB21927758007D2912 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		630A1FFC21927758007D2912 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		630A200221927758007D2912 /* WZChartsViewWidgetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WZChartsViewWidgetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		630A200621927758007D2912 /* WZChartsViewWidgetTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WZChartsViewWidgetTests.m; sourceTree = "<group>"; };
+		630A200821927758007D2912 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		630A200D21927758007D2912 /* WZChartsViewWidgetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WZChartsViewWidgetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		630A201121927758007D2912 /* WZChartsViewWidgetUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WZChartsViewWidgetUITests.m; sourceTree = "<group>"; };
+		630A201321927758007D2912 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		630A203F21927E8E007D2912 /* WZRingShapeLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZRingShapeLayer.m; sourceTree = "<group>"; };
+		630A204021927E8E007D2912 /* WZRingChartsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZRingChartsView.m; sourceTree = "<group>"; };
+		630A204121927E8E007D2912 /* WZRingAnimParams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZRingAnimParams.h; sourceTree = "<group>"; };
+		630A204221927E8E007D2912 /* WZRingShapeLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZRingShapeLayer.h; sourceTree = "<group>"; };
+		630A204321927E8E007D2912 /* WZRingChartsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZRingChartsView.h; sourceTree = "<group>"; };
+		630A204421927E8E007D2912 /* WZRingAnimParams.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZRingAnimParams.m; sourceTree = "<group>"; };
+		630A204721927E8E007D2912 /* WZColumnView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZColumnView.h; sourceTree = "<group>"; };
+		630A204821927E8E007D2912 /* WZColumnViewParams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZColumnViewParams.h; sourceTree = "<group>"; };
+		630A204921927E8E007D2912 /* WZChartsDoubleColumnChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZChartsDoubleColumnChartView.m; sourceTree = "<group>"; };
+		630A204A21927E8E007D2912 /* WZColumnView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZColumnView.m; sourceTree = "<group>"; };
+		630A204B21927E8E007D2912 /* WZColumnViewParams.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZColumnViewParams.m; sourceTree = "<group>"; };
+		630A204C21927E8E007D2912 /* WZChartsDoubleColumnChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZChartsDoubleColumnChartView.h; sourceTree = "<group>"; };
+		630A204D21927E8E007D2912 /* UIColor+WZPalette.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+WZPalette.h"; sourceTree = "<group>"; };
+		630A204F21927E8E007D2912 /* WZChartsLineChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZChartsLineChartView.h; sourceTree = "<group>"; };
+		630A205021927E8E007D2912 /* WZChartsLineChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZChartsLineChartView.m; sourceTree = "<group>"; };
+		630A205121927E8E007D2912 /* WZChartsBaseBackView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZChartsBaseBackView.h; sourceTree = "<group>"; };
+		630A205221927E8E007D2912 /* UIColor+WZPalette.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+WZPalette.m"; sourceTree = "<group>"; };
+		630A205321927E8E007D2912 /* WZChartsBaseBackView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZChartsBaseBackView.m; sourceTree = "<group>"; };
+		630A205E21927E9A007D2912 /* APTopRingChartsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APTopRingChartsView.h; sourceTree = "<group>"; };
+		630A206021927E9A007D2912 /* APTopRingChartsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APTopRingChartsView.m; sourceTree = "<group>"; };
+		630A2065219282F5007D2912 /* WZRingChartsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WZRingChartsViewController.h; sourceTree = "<group>"; };
+		630A2066219282F5007D2912 /* WZRingChartsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WZRingChartsViewController.m; sourceTree = "<group>"; };
+		630A2069219289F1007D2912 /* WholeSituation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WholeSituation.h; sourceTree = "<group>"; };
+		630A206B21928CBC007D2912 /* UIImage+Gif.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Gif.m"; sourceTree = "<group>"; };
+		630A206C21928CBC007D2912 /* UIFont+SystemFontName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+SystemFontName.h"; sourceTree = "<group>"; };
+		630A206D21928CBC007D2912 /* UIFont+SystemFontName.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+SystemFontName.m"; sourceTree = "<group>"; };
+		630A206E21928CBC007D2912 /* UIResponder+Router.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+Router.h"; sourceTree = "<group>"; };
+		630A206F21928CBC007D2912 /* CALayer+ShadowRadius.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+ShadowRadius.h"; sourceTree = "<group>"; };
+		630A207021928CBC007D2912 /* UIResponder+Router.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+Router.m"; sourceTree = "<group>"; };
+		630A207121928CBC007D2912 /* CALayer+ShadowRadius.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+ShadowRadius.m"; sourceTree = "<group>"; };
+		630A207221928CBC007D2912 /* UIImage+Gif.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Gif.h"; sourceTree = "<group>"; };
+		630A207821929794007D2912 /* WZLineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WZLineViewController.h; sourceTree = "<group>"; };
+		630A207921929794007D2912 /* WZLineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WZLineViewController.m; sourceTree = "<group>"; };
+		630A207B219298AF007D2912 /* WZLineViewParams.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WZLineViewParams.h; sourceTree = "<group>"; };
+		630A207C219298AF007D2912 /* WZLineViewParams.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WZLineViewParams.m; sourceTree = "<group>"; };
+		6383765D2193C8EC001C5532 /* WZDoubleColumnViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WZDoubleColumnViewController.h; sourceTree = "<group>"; };
+		6383765E2193C8EC001C5532 /* WZDoubleColumnViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WZDoubleColumnViewController.m; sourceTree = "<group>"; };
+		638376612193CF72001C5532 /* WZGroupChartsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WZGroupChartsView.h; sourceTree = "<group>"; };
+		638376622193CF72001C5532 /* WZGroupChartsView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WZGroupChartsView.m; sourceTree = "<group>"; };
+		638376642193D756001C5532 /* WZGroupChartsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WZGroupChartsViewController.h; sourceTree = "<group>"; };
+		638376652193D756001C5532 /* WZGroupChartsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WZGroupChartsViewController.m; sourceTree = "<group>"; };
+		A883F9547FA5D4D7B7B3656C /* Pods-WZChartsViewWidget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WZChartsViewWidget.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WZChartsViewWidget/Pods-WZChartsViewWidget.debug.xcconfig"; sourceTree = "<group>"; };
+		A9D600BED513FE38EE47182C /* Pods-WZChartsViewWidget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WZChartsViewWidget.release.xcconfig"; path = "Pods/Target Support Files/Pods-WZChartsViewWidget/Pods-WZChartsViewWidget.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		630A1FE721927755007D2912 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93BC841740D8BF3799725E49 /* libPods-WZChartsViewWidget.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		630A1FFF21927758007D2912 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		630A200A21927758007D2912 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14E65D4B29F747D46D24BE17 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A883F9547FA5D4D7B7B3656C /* Pods-WZChartsViewWidget.debug.xcconfig */,
+				A9D600BED513FE38EE47182C /* Pods-WZChartsViewWidget.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		428787EE5D19CB6E8C455F64 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4B99DD63DB22A3D9348F3DA7 /* libPods-WZChartsViewWidget.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		630A1FE121927755007D2912 = {
+			isa = PBXGroup;
+			children = (
+				630A1FEC21927755007D2912 /* WZChartsViewWidget */,
+				630A200521927758007D2912 /* WZChartsViewWidgetTests */,
+				630A201021927758007D2912 /* WZChartsViewWidgetUITests */,
+				630A1FEB21927755007D2912 /* Products */,
+				14E65D4B29F747D46D24BE17 /* Pods */,
+				428787EE5D19CB6E8C455F64 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		630A1FEB21927755007D2912 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				630A1FEA21927755007D2912 /* WZChartsViewWidget.app */,
+				630A200221927758007D2912 /* WZChartsViewWidgetTests.xctest */,
+				630A200D21927758007D2912 /* WZChartsViewWidgetUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		630A1FEC21927755007D2912 /* WZChartsViewWidget */ = {
+			isa = PBXGroup;
+			children = (
+				630A206A21928C9A007D2912 /* WZSomeTools */,
+				630A206321927ED3007D2912 /* WZChartsView */,
+				630A206421927F03007D2912 /* WZChartsExample */,
+				630A1FED21927755007D2912 /* AppDelegate.h */,
+				630A1FEE21927755007D2912 /* AppDelegate.m */,
+				630A1FF021927755007D2912 /* ViewController.h */,
+				630A1FF121927755007D2912 /* ViewController.m */,
+				630A1FF321927755007D2912 /* Main.storyboard */,
+				630A1FF621927758007D2912 /* Assets.xcassets */,
+				630A1FF821927758007D2912 /* LaunchScreen.storyboard */,
+				630A1FFB21927758007D2912 /* Info.plist */,
+				630A1FFC21927758007D2912 /* main.m */,
+			);
+			path = WZChartsViewWidget;
+			sourceTree = "<group>";
+		};
+		630A200521927758007D2912 /* WZChartsViewWidgetTests */ = {
+			isa = PBXGroup;
+			children = (
+				630A200621927758007D2912 /* WZChartsViewWidgetTests.m */,
+				630A200821927758007D2912 /* Info.plist */,
+			);
+			path = WZChartsViewWidgetTests;
+			sourceTree = "<group>";
+		};
+		630A201021927758007D2912 /* WZChartsViewWidgetUITests */ = {
+			isa = PBXGroup;
+			children = (
+				630A201121927758007D2912 /* WZChartsViewWidgetUITests.m */,
+				630A201321927758007D2912 /* Info.plist */,
+			);
+			path = WZChartsViewWidgetUITests;
+			sourceTree = "<group>";
+		};
+		630A203E21927E8E007D2912 /* WZRingChartsV */ = {
+			isa = PBXGroup;
+			children = (
+				630A204121927E8E007D2912 /* WZRingAnimParams.h */,
+				630A204421927E8E007D2912 /* WZRingAnimParams.m */,
+				630A204221927E8E007D2912 /* WZRingShapeLayer.h */,
+				630A203F21927E8E007D2912 /* WZRingShapeLayer.m */,
+				630A204321927E8E007D2912 /* WZRingChartsView.h */,
+				630A204021927E8E007D2912 /* WZRingChartsView.m */,
+			);
+			path = WZRingChartsV;
+			sourceTree = "<group>";
+		};
+		630A204521927E8E007D2912 /* WZChartGroupV */ = {
+			isa = PBXGroup;
+			children = (
+				630A205121927E8E007D2912 /* WZChartsBaseBackView.h */,
+				630A205321927E8E007D2912 /* WZChartsBaseBackView.m */,
+				630A204E21927E8E007D2912 /* WZLineChartWidget */,
+				630A204621927E8E007D2912 /* WZColumnChartWidget */,
+			);
+			path = WZChartGroupV;
+			sourceTree = "<group>";
+		};
+		630A204621927E8E007D2912 /* WZColumnChartWidget */ = {
+			isa = PBXGroup;
+			children = (
+				630A204821927E8E007D2912 /* WZColumnViewParams.h */,
+				630A204B21927E8E007D2912 /* WZColumnViewParams.m */,
+				630A204721927E8E007D2912 /* WZColumnView.h */,
+				630A204A21927E8E007D2912 /* WZColumnView.m */,
+				630A204C21927E8E007D2912 /* WZChartsDoubleColumnChartView.h */,
+				630A204921927E8E007D2912 /* WZChartsDoubleColumnChartView.m */,
+			);
+			path = WZColumnChartWidget;
+			sourceTree = "<group>";
+		};
+		630A204E21927E8E007D2912 /* WZLineChartWidget */ = {
+			isa = PBXGroup;
+			children = (
+				630A207B219298AF007D2912 /* WZLineViewParams.h */,
+				630A207C219298AF007D2912 /* WZLineViewParams.m */,
+				630A204F21927E8E007D2912 /* WZChartsLineChartView.h */,
+				630A205021927E8E007D2912 /* WZChartsLineChartView.m */,
+			);
+			path = WZLineChartWidget;
+			sourceTree = "<group>";
+		};
+		630A206321927ED3007D2912 /* WZChartsView */ = {
+			isa = PBXGroup;
+			children = (
+				630A203E21927E8E007D2912 /* WZRingChartsV */,
+				630A204521927E8E007D2912 /* WZChartGroupV */,
+			);
+			path = WZChartsView;
+			sourceTree = "<group>";
+		};
+		630A206421927F03007D2912 /* WZChartsExample */ = {
+			isa = PBXGroup;
+			children = (
+				638376602193CF45001C5532 /* WZGroupChartsExample */,
+				6383765C2193C8C1001C5532 /* WZDoubleColumnChartsExample */,
+				630A2068219288B4007D2912 /* WZRingChartsExample */,
+				630A207721929748007D2912 /* WZLineChartsExample */,
+			);
+			path = WZChartsExample;
+			sourceTree = "<group>";
+		};
+		630A2068219288B4007D2912 /* WZRingChartsExample */ = {
+			isa = PBXGroup;
+			children = (
+				630A205E21927E9A007D2912 /* APTopRingChartsView.h */,
+				630A206021927E9A007D2912 /* APTopRingChartsView.m */,
+				630A2065219282F5007D2912 /* WZRingChartsViewController.h */,
+				630A2066219282F5007D2912 /* WZRingChartsViewController.m */,
+			);
+			path = WZRingChartsExample;
+			sourceTree = "<group>";
+		};
+		630A206A21928C9A007D2912 /* WZSomeTools */ = {
+			isa = PBXGroup;
+			children = (
+				630A2069219289F1007D2912 /* WholeSituation.h */,
+				630A204D21927E8E007D2912 /* UIColor+WZPalette.h */,
+				630A205221927E8E007D2912 /* UIColor+WZPalette.m */,
+				630A206F21928CBC007D2912 /* CALayer+ShadowRadius.h */,
+				630A207121928CBC007D2912 /* CALayer+ShadowRadius.m */,
+				630A206C21928CBC007D2912 /* UIFont+SystemFontName.h */,
+				630A206D21928CBC007D2912 /* UIFont+SystemFontName.m */,
+				630A207221928CBC007D2912 /* UIImage+Gif.h */,
+				630A206B21928CBC007D2912 /* UIImage+Gif.m */,
+				630A206E21928CBC007D2912 /* UIResponder+Router.h */,
+				630A207021928CBC007D2912 /* UIResponder+Router.m */,
+			);
+			path = WZSomeTools;
+			sourceTree = "<group>";
+		};
+		630A207721929748007D2912 /* WZLineChartsExample */ = {
+			isa = PBXGroup;
+			children = (
+				630A207821929794007D2912 /* WZLineViewController.h */,
+				630A207921929794007D2912 /* WZLineViewController.m */,
+			);
+			path = WZLineChartsExample;
+			sourceTree = "<group>";
+		};
+		6383765C2193C8C1001C5532 /* WZDoubleColumnChartsExample */ = {
+			isa = PBXGroup;
+			children = (
+				6383765D2193C8EC001C5532 /* WZDoubleColumnViewController.h */,
+				6383765E2193C8EC001C5532 /* WZDoubleColumnViewController.m */,
+			);
+			path = WZDoubleColumnChartsExample;
+			sourceTree = "<group>";
+		};
+		638376602193CF45001C5532 /* WZGroupChartsExample */ = {
+			isa = PBXGroup;
+			children = (
+				638376612193CF72001C5532 /* WZGroupChartsView.h */,
+				638376622193CF72001C5532 /* WZGroupChartsView.m */,
+				638376642193D756001C5532 /* WZGroupChartsViewController.h */,
+				638376652193D756001C5532 /* WZGroupChartsViewController.m */,
+			);
+			path = WZGroupChartsExample;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		630A1FE921927755007D2912 /* WZChartsViewWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 630A201621927758007D2912 /* Build configuration list for PBXNativeTarget "WZChartsViewWidget" */;
+			buildPhases = (
+				41F13EEEB1FE739104D3C69E /* [CP] Check Pods Manifest.lock */,
+				630A1FE621927755007D2912 /* Sources */,
+				630A1FE721927755007D2912 /* Frameworks */,
+				630A1FE821927755007D2912 /* Resources */,
+				39C42EFE521B0F93BF433FB6 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WZChartsViewWidget;
+			productName = WZChartsViewWidget;
+			productReference = 630A1FEA21927755007D2912 /* WZChartsViewWidget.app */;
+			productType = "com.apple.product-type.application";
+		};
+		630A200121927758007D2912 /* WZChartsViewWidgetTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 630A201921927758007D2912 /* Build configuration list for PBXNativeTarget "WZChartsViewWidgetTests" */;
+			buildPhases = (
+				630A1FFE21927758007D2912 /* Sources */,
+				630A1FFF21927758007D2912 /* Frameworks */,
+				630A200021927758007D2912 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				630A200421927758007D2912 /* PBXTargetDependency */,
+			);
+			name = WZChartsViewWidgetTests;
+			productName = WZChartsViewWidgetTests;
+			productReference = 630A200221927758007D2912 /* WZChartsViewWidgetTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		630A200C21927758007D2912 /* WZChartsViewWidgetUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 630A201C21927758007D2912 /* Build configuration list for PBXNativeTarget "WZChartsViewWidgetUITests" */;
+			buildPhases = (
+				630A200921927758007D2912 /* Sources */,
+				630A200A21927758007D2912 /* Frameworks */,
+				630A200B21927758007D2912 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				630A200F21927758007D2912 /* PBXTargetDependency */,
+			);
+			name = WZChartsViewWidgetUITests;
+			productName = WZChartsViewWidgetUITests;
+			productReference = 630A200D21927758007D2912 /* WZChartsViewWidgetUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		630A1FE221927755007D2912 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = WenZiCyan;
+				TargetAttributes = {
+					630A1FE921927755007D2912 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					630A200121927758007D2912 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 630A1FE921927755007D2912;
+					};
+					630A200C21927758007D2912 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 630A1FE921927755007D2912;
+					};
+				};
+			};
+			buildConfigurationList = 630A1FE521927755007D2912 /* Build configuration list for PBXProject "WZChartsViewWidget" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 630A1FE121927755007D2912;
+			productRefGroup = 630A1FEB21927755007D2912 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				630A1FE921927755007D2912 /* WZChartsViewWidget */,
+				630A200121927758007D2912 /* WZChartsViewWidgetTests */,
+				630A200C21927758007D2912 /* WZChartsViewWidgetUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		630A1FE821927755007D2912 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				630A1FFA21927758007D2912 /* LaunchScreen.storyboard in Resources */,
+				630A1FF721927758007D2912 /* Assets.xcassets in Resources */,
+				630A1FF521927755007D2912 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		630A200021927758007D2912 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		630A200B21927758007D2912 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		39C42EFE521B0F93BF433FB6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WZChartsViewWidget/Pods-WZChartsViewWidget-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WZChartsViewWidget/Pods-WZChartsViewWidget-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		41F13EEEB1FE739104D3C69E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WZChartsViewWidget-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		630A1FE621927755007D2912 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				630A207621928CBC007D2912 /* CALayer+ShadowRadius.m in Sources */,
+				630A206221927E9A007D2912 /* APTopRingChartsView.m in Sources */,
+				630A207A21929794007D2912 /* WZLineViewController.m in Sources */,
+				630A205421927E8F007D2912 /* WZRingShapeLayer.m in Sources */,
+				630A1FF221927755007D2912 /* ViewController.m in Sources */,
+				630A205921927E8F007D2912 /* WZColumnViewParams.m in Sources */,
+				638376632193CF72001C5532 /* WZGroupChartsView.m in Sources */,
+				630A207521928CBC007D2912 /* UIResponder+Router.m in Sources */,
+				630A1FFD21927758007D2912 /* main.m in Sources */,
+				630A205821927E8F007D2912 /* WZColumnView.m in Sources */,
+				630A207D219298AF007D2912 /* WZLineViewParams.m in Sources */,
+				630A1FEF21927755007D2912 /* AppDelegate.m in Sources */,
+				630A2067219282F5007D2912 /* WZRingChartsViewController.m in Sources */,
+				6383765F2193C8EC001C5532 /* WZDoubleColumnViewController.m in Sources */,
+				630A207421928CBC007D2912 /* UIFont+SystemFontName.m in Sources */,
+				638376662193D756001C5532 /* WZGroupChartsViewController.m in Sources */,
+				630A205C21927E8F007D2912 /* WZChartsBaseBackView.m in Sources */,
+				630A207321928CBC007D2912 /* UIImage+Gif.m in Sources */,
+				630A205721927E8F007D2912 /* WZChartsDoubleColumnChartView.m in Sources */,
+				630A205A21927E8F007D2912 /* WZChartsLineChartView.m in Sources */,
+				630A205521927E8F007D2912 /* WZRingChartsView.m in Sources */,
+				630A205B21927E8F007D2912 /* UIColor+WZPalette.m in Sources */,
+				630A205621927E8F007D2912 /* WZRingAnimParams.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		630A1FFE21927758007D2912 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				630A200721927758007D2912 /* WZChartsViewWidgetTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		630A200921927758007D2912 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				630A201221927758007D2912 /* WZChartsViewWidgetUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		630A200421927758007D2912 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 630A1FE921927755007D2912 /* WZChartsViewWidget */;
+			targetProxy = 630A200321927758007D2912 /* PBXContainerItemProxy */;
+		};
+		630A200F21927758007D2912 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 630A1FE921927755007D2912 /* WZChartsViewWidget */;
+			targetProxy = 630A200E21927758007D2912 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		630A1FF321927755007D2912 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				630A1FF421927755007D2912 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		630A1FF821927758007D2912 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				630A1FF921927758007D2912 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		630A201421927758007D2912 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		630A201521927758007D2912 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		630A201721927758007D2912 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A883F9547FA5D4D7B7B3656C /* Pods-WZChartsViewWidget.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EST43J7BNX;
+				INFOPLIST_FILE = WZChartsViewWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = WZChartsViewWidget.WZChartsViewWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		630A201821927758007D2912 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9D600BED513FE38EE47182C /* Pods-WZChartsViewWidget.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EST43J7BNX;
+				INFOPLIST_FILE = WZChartsViewWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = WZChartsViewWidget.WZChartsViewWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		630A201A21927758007D2912 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EST43J7BNX;
+				INFOPLIST_FILE = WZChartsViewWidgetTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = WZChartsViewWidget.WZChartsViewWidgetTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WZChartsViewWidget.app/WZChartsViewWidget";
+			};
+			name = Debug;
+		};
+		630A201B21927758007D2912 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EST43J7BNX;
+				INFOPLIST_FILE = WZChartsViewWidgetTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = WZChartsViewWidget.WZChartsViewWidgetTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WZChartsViewWidget.app/WZChartsViewWidget";
+			};
+			name = Release;
+		};
+		630A201D21927758007D2912 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EST43J7BNX;
+				INFOPLIST_FILE = WZChartsViewWidgetUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = WZChartsViewWidget.WZChartsViewWidgetUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WZChartsViewWidget;
+			};
+			name = Debug;
+		};
+		630A201E21927758007D2912 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EST43J7BNX;
+				INFOPLIST_FILE = WZChartsViewWidgetUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = WZChartsViewWidget.WZChartsViewWidgetUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WZChartsViewWidget;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		630A1FE521927755007D2912 /* Build configuration list for PBXProject "WZChartsViewWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				630A201421927758007D2912 /* Debug */,
+				630A201521927758007D2912 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		630A201621927758007D2912 /* Build configuration list for PBXNativeTarget "WZChartsViewWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				630A201721927758007D2912 /* Debug */,
+				630A201821927758007D2912 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		630A201921927758007D2912 /* Build configuration list for PBXNativeTarget "WZChartsViewWidgetTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				630A201A21927758007D2912 /* Debug */,
+				630A201B21927758007D2912 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		630A201C21927758007D2912 /* Build configuration list for PBXNativeTarget "WZChartsViewWidgetUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				630A201D21927758007D2912 /* Debug */,
+				630A201E21927758007D2912 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 630A1FE221927755007D2912 /* Project object */;
+}

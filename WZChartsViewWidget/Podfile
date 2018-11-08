@@ -1,0 +1,10 @@
+
+platform:ios, '8.0'
+
+target 'WZChartsViewWidget' do  #工程名称
+
+    #三方开源
+    pod 'Masonry'
+    pod 'MJRefresh'
+
+end
