@@ -37,6 +37,12 @@
 		638376662193D756001C5532 /* WZGroupChartsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 638376652193D756001C5532 /* WZGroupChartsViewController.m */; };
 		63837669219405A0001C5532 /* WZChartsSingleColumnChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 63837668219405A0001C5532 /* WZChartsSingleColumnChartView.m */; };
 		6383766D21940DBB001C5532 /* WZSingleColumnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6383766C21940DBB001C5532 /* WZSingleColumnViewController.m */; };
+		63EB1D55219E8FCC009B4BC3 /* WZMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63EB1D54219E8FCC009B4BC3 /* WZMapViewController.m */; };
+		63EB1D59219EAE14009B4BC3 /* chinaHigh.svg in Resources */ = {isa = PBXBuildFile; fileRef = 63EB1D58219EAE14009B4BC3 /* chinaHigh.svg */; };
+		63EB1D61219EAE4B009B4BC3 /* FSSVGPathElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 63EB1D5E219EAE4B009B4BC3 /* FSSVGPathElement.m */; };
+		63EB1D62219EAE4B009B4BC3 /* FSSVG.m in Sources */ = {isa = PBXBuildFile; fileRef = 63EB1D5F219EAE4B009B4BC3 /* FSSVG.m */; };
+		63EB1D63219EAE4B009B4BC3 /* FSSVGUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 63EB1D60219EAE4B009B4BC3 /* FSSVGUtils.m */; };
+		63EB1D66219EAE8B009B4BC3 /* FSInteractiveMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 63EB1D64219EAE8B009B4BC3 /* FSInteractiveMapView.m */; };
 		93BC841740D8BF3799725E49 /* libPods-WZChartsViewWidget.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B99DD63DB22A3D9348F3DA7 /* libPods-WZChartsViewWidget.a */; };
 /* End PBXBuildFile section */
 
@@ -120,6 +126,17 @@
 		63837668219405A0001C5532 /* WZChartsSingleColumnChartView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WZChartsSingleColumnChartView.m; sourceTree = "<group>"; };
 		6383766B21940DBB001C5532 /* WZSingleColumnViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WZSingleColumnViewController.h; sourceTree = "<group>"; };
 		6383766C21940DBB001C5532 /* WZSingleColumnViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WZSingleColumnViewController.m; sourceTree = "<group>"; };
+		63EB1D53219E8FCC009B4BC3 /* WZMapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WZMapViewController.h; sourceTree = "<group>"; };
+		63EB1D54219E8FCC009B4BC3 /* WZMapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WZMapViewController.m; sourceTree = "<group>"; };
+		63EB1D58219EAE14009B4BC3 /* chinaHigh.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = chinaHigh.svg; sourceTree = "<group>"; };
+		63EB1D5B219EAE4B009B4BC3 /* FSSVGPathElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSSVGPathElement.h; sourceTree = "<group>"; };
+		63EB1D5C219EAE4B009B4BC3 /* FSSVG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSSVG.h; sourceTree = "<group>"; };
+		63EB1D5D219EAE4B009B4BC3 /* FSSVGUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSSVGUtils.h; sourceTree = "<group>"; };
+		63EB1D5E219EAE4B009B4BC3 /* FSSVGPathElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSSVGPathElement.m; sourceTree = "<group>"; };
+		63EB1D5F219EAE4B009B4BC3 /* FSSVG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSSVG.m; sourceTree = "<group>"; };
+		63EB1D60219EAE4B009B4BC3 /* FSSVGUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSSVGUtils.m; sourceTree = "<group>"; };
+		63EB1D64219EAE8B009B4BC3 /* FSInteractiveMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSInteractiveMapView.m; sourceTree = "<group>"; };
+		63EB1D65219EAE8B009B4BC3 /* FSInteractiveMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSInteractiveMapView.h; sourceTree = "<group>"; };
 		A883F9547FA5D4D7B7B3656C /* Pods-WZChartsViewWidget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WZChartsViewWidget.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WZChartsViewWidget/Pods-WZChartsViewWidget.debug.xcconfig"; sourceTree = "<group>"; };
 		A9D600BED513FE38EE47182C /* Pods-WZChartsViewWidget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WZChartsViewWidget.release.xcconfig"; path = "Pods/Target Support Files/Pods-WZChartsViewWidget/Pods-WZChartsViewWidget.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -192,6 +209,8 @@
 		630A1FEC21927755007D2912 /* WZChartsViewWidget */ = {
 			isa = PBXGroup;
 			children = (
+				63EB1D5A219EAE4B009B4BC3 /* FSSVG */,
+				63EB1D50219E8FA1009B4BC3 /* WZMap */,
 				630A206A21928C9A007D2912 /* WZSomeTools */,
 				630A206321927ED3007D2912 /* WZChartsView */,
 				630A206421927F03007D2912 /* WZChartsExample */,
@@ -364,6 +383,31 @@
 			path = WZSingleColumnChartsExample;
 			sourceTree = "<group>";
 		};
+		63EB1D50219E8FA1009B4BC3 /* WZMap */ = {
+			isa = PBXGroup;
+			children = (
+				63EB1D65219EAE8B009B4BC3 /* FSInteractiveMapView.h */,
+				63EB1D64219EAE8B009B4BC3 /* FSInteractiveMapView.m */,
+				63EB1D58219EAE14009B4BC3 /* chinaHigh.svg */,
+				63EB1D53219E8FCC009B4BC3 /* WZMapViewController.h */,
+				63EB1D54219E8FCC009B4BC3 /* WZMapViewController.m */,
+			);
+			path = WZMap;
+			sourceTree = "<group>";
+		};
+		63EB1D5A219EAE4B009B4BC3 /* FSSVG */ = {
+			isa = PBXGroup;
+			children = (
+				63EB1D5C219EAE4B009B4BC3 /* FSSVG.h */,
+				63EB1D5F219EAE4B009B4BC3 /* FSSVG.m */,
+				63EB1D5D219EAE4B009B4BC3 /* FSSVGUtils.h */,
+				63EB1D60219EAE4B009B4BC3 /* FSSVGUtils.m */,
+				63EB1D5B219EAE4B009B4BC3 /* FSSVGPathElement.h */,
+				63EB1D5E219EAE4B009B4BC3 /* FSSVGPathElement.m */,
+			);
+			path = FSSVG;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -471,6 +515,7 @@
 			files = (
 				630A1FFA21927758007D2912 /* LaunchScreen.storyboard in Resources */,
 				630A1FF721927758007D2912 /* Assets.xcassets in Resources */,
+				63EB1D59219EAE14009B4BC3 /* chinaHigh.svg in Resources */,
 				630A1FF521927755007D2912 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -536,12 +581,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				630A207621928CBC007D2912 /* CALayer+ShadowRadius.m in Sources */,
+				63EB1D66219EAE8B009B4BC3 /* FSInteractiveMapView.m in Sources */,
 				630A206221927E9A007D2912 /* APTopRingChartsView.m in Sources */,
 				630A207A21929794007D2912 /* WZLineViewController.m in Sources */,
 				630A205421927E8F007D2912 /* WZRingShapeLayer.m in Sources */,
 				630A1FF221927755007D2912 /* ViewController.m in Sources */,
+				63EB1D63219EAE4B009B4BC3 /* FSSVGUtils.m in Sources */,
 				630A205921927E8F007D2912 /* WZColumnViewParams.m in Sources */,
 				638376632193CF72001C5532 /* WZGroupChartsView.m in Sources */,
+				63EB1D62219EAE4B009B4BC3 /* FSSVG.m in Sources */,
+				63EB1D61219EAE4B009B4BC3 /* FSSVGPathElement.m in Sources */,
 				630A207521928CBC007D2912 /* UIResponder+Router.m in Sources */,
 				630A1FFD21927758007D2912 /* main.m in Sources */,
 				630A205821927E8F007D2912 /* WZColumnView.m in Sources */,
@@ -553,6 +602,7 @@
 				630A207421928CBC007D2912 /* UIFont+SystemFontName.m in Sources */,
 				6383766D21940DBB001C5532 /* WZSingleColumnViewController.m in Sources */,
 				638376662193D756001C5532 /* WZGroupChartsViewController.m in Sources */,
+				63EB1D55219E8FCC009B4BC3 /* WZMapViewController.m in Sources */,
 				630A205C21927E8F007D2912 /* WZChartsBaseBackView.m in Sources */,
 				630A207321928CBC007D2912 /* UIImage+Gif.m in Sources */,
 				630A205721927E8F007D2912 /* WZChartsDoubleColumnChartView.m in Sources */,

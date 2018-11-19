@@ -12,6 +12,7 @@
 #import "WZDoubleColumnViewController.h"
 #import "WZGroupChartsViewController.h"
 #import "WZSingleColumnViewController.h"
+#import "WZMapViewController.h"
 #import <Masonry.h>
 #import "UIColor+WZPalette.h"
 
@@ -105,6 +106,9 @@
     else if ([title isEqualToString:@"复合图"]) {
         vc = [[WZGroupChartsViewController alloc]init];
     }
+    else if ([title isEqualToString:@"地图"]) {
+        vc = [[WZMapViewController alloc]init];
+    }
     if (vc) {
         [self.navigationController pushViewController:vc animated:YES];
     }
@@ -122,11 +126,13 @@
     NSDictionary *dic3 = @{@"title":@"Single柱形图"};
     NSDictionary *dic4 = @{@"title":@"Double柱形图"};
     NSDictionary *dic5 = @{@"title":@"复合图"};
+    NSDictionary *dic6 = @{@"title":@"地图"};
     [_dataArray addObject:dic1];
     [_dataArray addObject:dic2];
     [_dataArray addObject:dic3];
     [_dataArray addObject:dic4];
     [_dataArray addObject:dic5];
+    [_dataArray addObject:dic6];
     [self.tableView reloadData];
 }
 
@@ -150,6 +156,5 @@
     }
     return _tableView;
 }
-
 
 @end

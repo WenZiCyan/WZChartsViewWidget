@@ -6,5 +6,8 @@ target 'WZChartsViewWidget' do  #工程名称
     #三方开源
     pod 'Masonry'
     pod 'MJRefresh'
+    pod 'SVGKit', :git => 'https://github.com/SVGKit/SVGKit.git', :branch => '2.x'
+    pod 'CocoaLumberjack'
+    pod 'FMDB'
 
 end
